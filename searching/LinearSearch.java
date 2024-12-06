@@ -1,7 +1,7 @@
 import java.util.Scanner;
 import java.util.Arrays;
 
-public class LinearSearch {
+class LinearSearch {
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
 
@@ -24,13 +24,13 @@ public class LinearSearch {
         int target = in.nextInt();
 
         // run function and print the ans
-        int ans = LinearSearch(arr, target);
+        int ans = linearSearchFn(arr, target);
         System.out.println("The element was found at index: " + ans);
 
     }
 
     // LINEAR SEARCH FUNCTION
-    static int LinearSearchFn(int[] arr, int target) {
+    static int linearSearchFn(int[] arr, int target) {
         if (arr.length == 0) {
             return -1;
         }
@@ -45,7 +45,7 @@ public class LinearSearch {
     }
 
     // SEARCH IN RANGE
-    static int LinearSearchFn(int[] arr, int target, int start, int end) {
+    static int linearSearchFn(int[] arr, int target, int start, int end) {
         if (arr.length == 0) {
             return -1;
         }

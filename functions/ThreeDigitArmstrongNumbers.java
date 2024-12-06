@@ -1,5 +1,3 @@
-package functions;
-
 public class ThreeDigitArmstrongNumbers {
     public static void main(String[] args) {
         String ans = "";
